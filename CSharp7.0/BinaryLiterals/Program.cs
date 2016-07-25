@@ -1,16 +1,20 @@
-﻿using System;
+﻿using static System.Console;
 
 namespace BinaryLiterals {
 	class Program {
 
 		static void Main(string[] args) {
 
+			int one = 0b1;
+			int two = 0b10;
+			int three = 0b11;
 			int nineteen = 0b10011;
-			Console.WriteLine(nineteen);
 
-			int[] numbers = { 0b1, 0b10, ob100, 0b1000, 0b10000, ob100000 };
+			WriteLine(nineteen);
+
+			int[] numbers = { 0b1, 0b10, 0b11, 0b10011};
 			foreach (var number in numbers) {
-				Console.WriteLine(number);
+				WriteLine(number);
 			}
 		}
 	}

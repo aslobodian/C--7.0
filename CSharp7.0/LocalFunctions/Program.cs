@@ -1,16 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using static System.Console;
 
 namespace LocalFunctions {
 	class Program {
 		static void Main(string[] args) {
-			var strings = new List<string> { "1", "blah", "3" };
-			int IndexOfFirstNumber(IEnumerable<string> items){
-				//index of first number;
-				return 0;
+
+			int GetLastNumber(IEnumerable <int> items){
+				return items.Last();
 			}
 
-			Console.WriteLine(IndexOfFirstNumber(strings));
+			var numbers = new List<int> { 9, 1, -23, 1993 };
+			var last = GetLastNumber(numbers);
+			WriteLine($"Last: {last}");
 		}
 	}
 }
