@@ -21,7 +21,7 @@ namespace PatternMatchingWithTuples {
 
 		static void Main(string[] args) {
 			//C# 7.0
-			(int sum, int count) SomeFunction(IEnumerable<int> items) {
+			(int sum, int count) SomeFunction(IEnumerable<object> items) {
 				var r = (s: 0, c: 0);
 				foreach (var item in items) {
 					switch (item) {
